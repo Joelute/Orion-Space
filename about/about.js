@@ -9,8 +9,8 @@ document.querySelector('#app').innerHTML = `
         <!--Our Navigation Bar-->
         <nav>
             <a href="Orion_Space_Home.html">Orion Space</a>
-            <a href="Orion_SpaceLaunch_Dates.html">Launch Dates</a>
-            <a href="Orion_SpaceTraining.html">Training</a>
+            <a href="Orion_Space_Launch_Dates.html">Launch Dates</a>
+            <a href="Orion_Space_Training.html">Training</a>
             <a href="Orion_Space_About_Us.html">Us and our motto</a>
         </nav>
     </header>
