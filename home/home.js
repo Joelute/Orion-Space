@@ -1,7 +1,8 @@
 import '../style.css'
 
 document.querySelector('#app').innerHTML = `
-    <img src="Background.jpg" alt="Nightscene">
+
+
     <div class="a">
         <h1 id="WebName">Orion Space</h1>
             <nav>
@@ -12,16 +13,3 @@ document.querySelector('#app').innerHTML = `
             </nav>
     </div>
 `
-
-$(window).scroll(function() {
-    $('nav').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
-            $(this).addClass("nav");
-        }
-    });
-});
-
-console.log('yes')

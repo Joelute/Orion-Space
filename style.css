@@ -1,28 +1,39 @@
-/*nav ul{
-    margin:0;
-    padding:0;
-    list-style-type:none;
-    display:flex;
-    justify-content:center;
-}
-a ul li a{
-    display:block;
-    border:1px solid;
-    border-radius: .5em;
-    padding: .5em 1em;
-    margin: .5em;
-}
-/*Reformed nav bar*/
+/*The following changes have been made:
 
+- #Title has been added for the page title (for scaling)
+- The background image has been added to the body
+- nav font size has been changed
+- added margin change for background image
+*/
+svg{
+	height:17%;
+	width:17%;
+}
+#app{
+	margin-bottom: 55em;
+}
+#News{
+	background-image:url(./rocket.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+#Title{
+	font-size:5em;
+}
 body {
 	font-family: Arial;
 	font-size: 16px;
 	line-height: 1.5;
-
+	display:block;
 	background-color: black;
 	color: white;
 	margin: 80px auto 48px auto;
 	width: 1120px;
+	background-image:url(./OS_Probe4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
 }
 
 header {
@@ -32,7 +43,7 @@ header {
 }
 
 h1, nav, footer {
-	font-size: 40px;
+	font-size: 1.5em;
 	font-weight: 700;
 	font-family: Josefin Sans;
 	line-height: 1.2;
