@@ -5,12 +5,13 @@
 - nav font size has been changed
 - added margin change for background image
 */
+
 svg{
-	height:17%;
-	width:17%;
+	height:50%;
+	width:50%;
 }
 #app{
-	margin-bottom: 55em;
+	margin-bottom: 50em;
 }
 #News{
 	background-image:url(./rocket.jpg);
@@ -28,12 +29,20 @@ body {
 	display:block;
 	background-color: black;
 	color: white;
-	margin: 80px auto 48px auto;
-	width: 1120px;
+	margin: 2em auto 48px auto;
+	width: auto;
 	background-image:url(./OS_Probe4.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	height:1050px;
+	background-size:75%;
+	animation: change 10s infinite ease-out;
+}
+@keyframes{
+	0%
+	{
+		background:url(./OS_Probe4.png);
+	}
 }
 
 header {
@@ -41,32 +50,28 @@ header {
 	align-items: center;
 	justify-content: space-between;
 }
-
-h1, nav, footer {
+ nav, footer {
 	font-size: 1.5em;
 	font-weight: 700;
 	font-family: Josefin Sans;
 	line-height: 1.2;
 	text-align: center;
-}
-
-h2 {
-	font-size: 24px;
-	font-weight: 400;
-	font-family: Josefin Sans;
-	line-height: 1.3;
-	margin: 0 0 16px 0;
+	display:flex;
+	align-items:center;
 }
 
 a {
 	color: white;
 	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 0 0 0 32px;
-	transition: color 0.3s;
+	transition: color 0.6s;
 }
 
 a:hover {
-	color: #F4BCBB;
+	color: black;/*original color:#F4BCBB*/
+	border-radius:.25em;
+	background-color: whitesmoke;
 }
 
 section {
@@ -80,3 +85,59 @@ section h1 {
 	grid-column: 2 / span 10;
 	text-align: center;
 }
+img{
+	size:75%;
+}
+h1.fade-effect{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	-webkit-animation-duration: 1.5s;	
+	animation-duration: 1.5s;
+
+	
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	
+}
+
+
+

@@ -4,15 +4,173 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Home - Orion space</title>
   </head>
+  <style>
+  #name1{
+      position:absolute;
+      top:7em;
+      left:6em;
+      font-weight: 900;
+      font-size:2em;
+     width:11em;
+    }
+ div.fade-effect-container{
+    position:relative;
+    top:-40em;
+    left:60em;
+    width:20em;
+  }
+  h2.revealOnScroll, p.revealOnScroll2{
+    font-size:1.5em;
+  }
+  h2.revealOnScroll{
+    font-weight:bold;
+  }
+  p.revealOnScroll2{
+    font-family: 'Roboto', sans-serif;
+  }
+  .NU{
+    position:absolute;
+    left:20em;
+  }
+  h5{
+    border: .20em solid whitesmoke;
+    border-radius:.25em;
+    width:8em;
+    padding:.25em;
+    transition: color 0.6s;
+  }
+  h5:hover{
+    color:black;
+    background-color:whitesmoke;
+  }
+  .bigEntrance{
+	animation-name: bigEntrance;
+	-webkit-animation-name: bigEntrance;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	visibility: visible !important;			
+}
+
+@keyframes bigEntrance {
+	0% {
+		transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);		
+		opacity: 1;
+	}
+	45% {
+		transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	75% {
+		transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	100% {
+		transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}		
+}
+
+@-webkit-keyframes bigEntrance {
+	0% {
+		-webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		-webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);		
+		opacity: 1;
+	}
+	45% {
+		-webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		-webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	75% {
+		-webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	100% {
+		-webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}				
+}
+  </style>
   <body class="homeimg">
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-    
-  </body>
-  <h1>News and Updates</h1>
-  <h2>New travel record</h2>
-  <p>We understand that time is money. So every minute must be used wisely, or get to places faster with out new "Insert new rocket model". The travel time which would have been a day has been reduced for only a couple of hours</p>
-  <img src="./rocket.jpg" alt="Picture of our greatest creation yet">
+    <div id="name1" class="bigEntrance"><h1>Hermes</h1><h4 class="description1">The Future of Space Communications.</h4>
+    <h5>Learn More</h5></div>
+    </body>
+    <h1 class="NU">News and Updates</h1>
+    <img src="./Rocket_Final1.1.png" alt="Picture of our greatest creation yet">
+  <div class="fade-effect-container" data-aos="fade-left">
+    <h2 class="revealOnScroll"  data-animation="fadeIn">New travel record</h2>
+    <p class="revealOnScroll2" data-animation="fadeIn" data-timeout="400">During the testing of the automated Iterman Carrier I, it broke the record of the flight time to mars. The previous record which was 4 months is now an astonishing 30 days.</p>
+</div>
+<script>
+  /*$(function () {
+    var $window = $(window), win_height_padded = $window.height() * 1.1, isTouch = Modernizer.touch;
+    if (isTouch) {
+        $('.revealonScroll').addClass('animated');
+    }
+    $window.on('scroll',revealOnScroll);
+    function revealOnScroll(){
+      var scrolled = $window.scrollTop(), win_height_padded = $window.height() * 1.1;
+      $('.revealOnScroll:not(.animated)').each(function () {
+        var $this = $(this), offsetTop = $this.offset().top;
+        if (scrolled + win_height_padded > offsetTop) {
+            if ($this.data('timeout')) {
+              window.setTimeout(function () {
+                $this.addClass('animated'+ $this.data('animation'));
+              }, parseInt($this.data('timeout'), 10));
+            } else {
+              $this.addClass('animated' + $this.data('animation'));
+            }
+        }
+      });
+      $('.revealOnScroll.animated').each(function (index) {
+        var $this = $(this), offsetTop = $this.offset().top;
+        if (scrolled + win_height_padded < offsetTop) {
+          $(this).removeClass('animated fadeIn');
+        }
+      })
+    }
+  })*/
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<footer><p class="copy">&copy; Orion Space Flights 2023 ALL RIGHTS RESERVED</p></footer>
+  
 </html>
