@@ -1,143 +1,414 @@
-/*The following changes have been made:
-
-- #Title has been added for the page title (for scaling)
-- The background image has been added to the body
-- nav font size has been changed
-- added margin change for background image
-*/
-
-svg{
-	height:50%;
-	width:50%;
-}
-#app{
-	margin-bottom: 50em;
-}
-#News{
-	background-image:url(./rocket.jpg);
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-}
-#Title{
-	font-size:5em;
-}
-body {
-	font-family: Arial;
-	font-size: 16px;
-	line-height: 1.5;
-	display:block;
-	background-color: black;
-	color: white;
-	margin: 2em auto 48px auto;
-	width: auto;
-	background-image:url(./OS_Probe4.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	height:1050px;
-	background-size:75%;
-	animation: change 10s infinite ease-out;
-}
-@keyframes{
-	0%
-	{
-		background:url(./OS_Probe4.png);
-	}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
 }
 
-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
- nav, footer {
-	font-size: 1.5em;
-	font-weight: 700;
-	font-family: Josefin Sans;
-	line-height: 1.2;
-	text-align: center;
-	display:flex;
-	align-items:center;
+.navbar {
+    background: black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-a {
-	color: white;
-	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0 0 0 32px;
-	transition: color 0.6s;
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
-a:hover {
-	color: black;/*original color:#F4BCBB*/
-	border-radius:.25em;
-	background-color: whitesmoke;
-}
-
-section {
-	margin: 80px 0 80px 0;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	gap: 32px 32px;
-	grid-auto-flow: dense;
-}
-section h1 {
-	grid-column: 2 / span 10;
-	text-align: center;
-}
-img{
-	size:75%;
-}
-h1.fade-effect{
-	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
-
-	-webkit-animation-duration: 1.5s;	
-	animation-duration: 1.5s;
-
-	
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible !important;	
-}
-
-@keyframes fadeIn {
-	0% {
-		transform: scale(0);
-		opacity: 0.0;		
-	}
-	60% {
-		transform: scale(1.1);	
-	}
-	80% {
-		transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-		transform: scale(1);
-		opacity: 1;	
-	}		
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		-webkit-transform: scale(0);
-		opacity: 0.0;		
-	}
-	60% {
-		-webkit-transform: scale(1.1);
-	}
-	80% {
-		-webkit-transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-		-webkit-transform: scale(1);
-		opacity: 1;	
-	}	
-	
+#navbar__logo{
+    background-color: black;
+    background-size: 100%;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
 
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 100%px;
+}
+
+.navbar__links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 60px;
+}
+
+
+.navbar__links:hover{
+    
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #5421ca;
+    text-decoration-thickness: 4px;
+    transition: all 0.3s ease;
+    
+}
+
+.main1{
+    background-image: url('pictures/astronaut2Desktop.png');
+}
+.main__content{
+    background-image: url('pictures/OS_Probe4.png'); 
+    
+}
+
+.main2{
+    background-image: url('pictures/RocketGifdesktop.gif'); 
+    
+}
+
+.main3{
+    background-image: url('pictures/aurora1Desktop.png');
+    
+   }
+
+.main4{
+    background-image: url('pictures/ISSdesktop.jpg');
+}
+
+.main5{
+    background-image: url('pictures/teahub.io-mars-wallpaper-340862.jpg');
+}
+
+
+    .bg {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%; 
+
+        margin: 0%;
+        padding: 0%;
+     }
+     .text {
+        top: 30%;
+        left: 30%;
+        padding: 16px;
+        color: white;
+        width: 40%;
+        text-align: center;
+	    background-color: rgb(0,0,0); /*if image does not loads */
+        background-color: rgba(0,0,0,0.1);
+        position: relative;/*originally  set to fixed*/
+        z-index: 2;
+     }
+   
+.bg-text {
+    /*background-color: rgb(0,0,0);*/ /* Fallback color */
+    /*background-color: rgba(0,0,0, 0.4);*/ /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 10px solid #f1f1f1;
+    position: fixed;/*originally  set to fixed*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text h1{
+    font-size: 4rem;
+    /*background-color: black;*/
+    color: white;
+    /* background-size: 100%; */
+}
+
+.text h2{
+    font-size: 18;
+    /*background-color: black;*/
+    color: white;
+    /* background-size: 100%; */
+}
+ 
+
+
+.main {
+    background-color: black;
+    height: 100%;
+}
+
+
+/*.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0;
+    height: 90vh;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}*/
+
+
+
+.main__btn{
+    font-size: 1rem;
+    padding: 14px 32px;
+     border: 2px solid white;
+     border-radius: 4px;
+     color: white;
+     margin-top: 2rem;
+     cursor: pointer;
+     position: relative;
+     transition: all 0.35s;
+      outline: none;
+      background-color: black;
+}
+
+.main__btn a{
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+  
+}
+
+.main__btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:  #5421ca;
+    transition: all 0.35s;
+    border-radius: 0px;
+}
+
+.main__btn:hover{
+    color: white;
+}
+
+.main__btn:hover:after{
+    width:100%;
+}
+
+.main__img--container{
+    text-align: center;
+}
+
+
+
+html{
+    
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    
+}
+
+.main__container{
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 960px){
+    .navbar__container{
+     display: flex;
+     justify-content: space-between;
+     height: 60px;
+     z-index: 1;
+     width: 100%;
+     max-width: 1300px;
+     padding: 0;
+    }
+ 
+    .navbar__menu{
+     display: grid;
+     grid-template-columns: auto;
+     margin: 0;
+     width: 100%;
+     position: absolute;
+     top: -1000px;
+     opacity: 0;
+     transition: all 0.5s ease;
+     height: 60vh;
+     z-index: -1;
+     background: black;
+    }
+ 
+    .navbar__menu.active{
+     background: black;
+     top: 100%;
+     opacity: 1;
+     transform: all 0.5s ease;
+     z-index: 99;
+     height: 80vh;
+     font-size: 1.5rem;
+    }
+ 
+    #navbar__logo{
+     padding-left: 25px; 
+    }
+ 
+    .navbar__toggle .bar{
+     width: 25px;
+     height: 3px;
+     margin: 5px auto;
+     transition: all 0.3s ease-in-out;
+     background: white;
+    }
+ 
+    .navbar__item{
+     width: 100%;
+    }
+ 
+    .navbar__links{
+     text-align: center;
+     padding: 2rem;
+     width: 100%;
+     display: table;
+    }
+ 
+    #mobile-menu{
+     position: absolute;
+     top: 20%;
+     right: 5%;
+     transform: translate(5%, 20%);
+    }
+ 
+    .navbar__toggle .bar{
+         display: block;
+         cursor: pointer;
+    }
+ 
+    #mobile-menu.is-active .bar:nth-child(2){
+     opacity: 0;
+    }
+ 
+    #mobile-menu.is-active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+ 
+    #mobile-menu.is-active .bar:nth-child(3){
+     transform: translateY(-8px) rotate(-45deg);
+     }
+    
+ }
+
+/*@media screen and (max-width: 768px){
+
+    .text {
+        top: 25%;
+        left: 25%;
+        width: 55%;
+    }
+    .text h1{
+        font-size: 5rem;
+    }
+
+    .text h2{
+        font-size: 1.5rem;
+    }
+}*/
+
+ @media screen and (max-width: 480px){
+    .main1{
+        background-image: url('pictures/astro2_revised.png');
+    }
+    .main__content{
+        background-image: url('pictures/0001.png');
+        position: relative;
+    }
+
+    .main2{
+        background-image: url('pictures/RocketAdvGf.gif');
+    }
+
+   .main3{
+    background-image: url('pictures/Spacexshipfrontview_revised.png');
+   }
+
+   .main4{
+    background-image: url('pictures/ISSmobile.jpg');
+   }
+
+   .main5{
+    background-image: url('pictures/teahub.io-mars-wallpaperMobile.jpg');
+}
+
+    .text {
+        top: 75%;
+        left: 22%;
+        width: 60%;
+        /*text-align: center;*/
+    }
+    .text h1{
+        font-size: 3rem;
+        margin-top: -13rem;
+    }
+
+    .text h2{
+        font-size: 1.5rem;
+    }
+
+    .main__btn{
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+@media screen and (max-width: 474px){
+    .text {
+        top: 75%;
+        left: 22%;
+         width: 60%;
+         /*text-align: center;*/
+    }
+    .text h1{
+        font-size: 3rem;
+        margin-top: -5rem;
+    }
+
+    .text h2{
+        font-size: 1.3rem;
+    }
+
+    .main__btn{
+        padding: 10px 23px;
+        margin: 1.5rem 0;
+    }
+}
