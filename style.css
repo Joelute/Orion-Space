@@ -23,7 +23,7 @@
     height: 50px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1700px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -359,7 +359,7 @@ body{
     }
 
    .main3{
-    background-image: url('pictures/Spacexshipfrontview_revised.png');
+    background-image: url('pictures/spaceship_revised.png');
    }
 
    .main4{
