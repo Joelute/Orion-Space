@@ -76,6 +76,10 @@
     background-image: url('/pictures/pexels-frank-cone-3214110\ \(1\).jpg');
 }
 
+.main2{
+    background-image: url('/pictures/interiorDesktop.png');
+}
+
 .bg {
     height: 100%;
     background-position: center;
@@ -241,6 +245,10 @@ body{
  @media screen and (max-width: 480px){
     .main1{
             background-image: url('/pictures/pexels-frank-cone-3214110\ \Mobile.jpg');
+        }
+
+        .main2{
+            background-image: url('/pictures/interiorMobile.png');
         }
 
     .text {

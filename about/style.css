@@ -72,7 +72,12 @@
     
 }
 
-
+.main1img{
+    width: 40%;
+    position: absolute;
+    left: 50vw;
+    top: 90px;
+   }
 
 
 .bg {
@@ -146,7 +151,7 @@ html{
 
 body{
     height: 100%;
-    
+    background-color: black;
 }
 
 .main__container{
@@ -238,7 +243,11 @@ body{
  }
 
  @media screen and (max-width: 480px){
-   
+    .main1img{
+       width: 70%;
+       left: 16vw;
+       top: 10vh;
+       }
 
     .text {
         top: 75%;

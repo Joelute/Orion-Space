@@ -117,11 +117,11 @@
         top: 30%;
         left: 30%;
         padding: 16px;
-        color: white;
+        
         width: 40%;
         text-align: center;
 	    background-color: rgb(0,0,0); /*if image does not loads */
-        background-color: rgba(0,0,0,0.1);
+        background-color: rgba(0,0,0,0);
         position: relative;/*originally  set to fixed*/
         z-index: 2;
      }
@@ -145,7 +145,7 @@
   .text h1{
     font-size: 4rem;
     /*background-color: black;*/
-    color: white;
+    
     /* background-size: 100%; */
 }
 
@@ -153,9 +153,24 @@
     font-size: 18;
     /*background-color: black;*/
     color: white;
+    text-align: center;
     /* background-size: 100%; */
 }
  
+.home1{
+    left: 5%;
+    background: -webkit-linear-gradient(#4c6fe2, #5421ca);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fontColorChange{
+    background: -webkit-linear-gradient(white, #5421ca);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 .main {
@@ -405,6 +420,7 @@ body{
 
     .text h2{
         font-size: 1.3rem;
+        text-align: center;
     }
 
     .main__btn{

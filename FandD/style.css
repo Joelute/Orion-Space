@@ -75,11 +75,103 @@
 .main1{
     background-image: url('/pictures/aurora1Desktop.png');
 }
+#title1{
+    top: 0%;
+    position: absolute;
+    left: 37%;
+    color: rgba(58, 90, 218, 0.454);
+    text-align: center;
+}
+
+
+#price{
+   top: 30%; 
+   position: absolute;
+   text-align: left
+}
+
+#descPrice{
+    position: relative;
+    top: 59px;
+    left: 7.6%;
+    width: 64%;
+}
+
+#spec{
+    position: absolute;
+    top: 50%;
+    text-align: left;
+}
+
+#descSpec{
+    position: relative;
+    top: 78px;
+    left: 31%;
+    width: 45%;
+}
+
+#ppl{
+    position: absolute;
+    top: 82%;
+}
+
+#descPpl{
+    position: relative;
+    top: 97px;
+    left: 30%;
+    width: 40%;
+}
+
+#prep{
+    position: absolute;
+    top: 116%;
+}
+
+#descPrep{
+    position: relative;
+    top: 138px;
+    left: -4%;
+
+}
+
+#launch{
+    position: absolute;
+    top: 140%;
+}
+
+#descLaunch{
+    position: relative;
+    top: 182px;
+    left: 16%;
+    width: 70%;
+}
+
+#Recovery{
+    top: 190%;
+    position: absolute;
+}
+
+#descRecovery{
+    position: relative;
+    top: 257px;
+    left: 11%;
+    width: 65%;
+}
+
+
 
 .main2{
     background-image: url('/pictures/ISSdesktop.jpg');
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh;
 }
-
+#descCost2{
+   width: 50%;
+}
+#empty{
+    grid-template-rows: 0%;
+}
 .main3{
     background-image: url('/pictures/teahub.io-mars-wallpaper-340862.jpg');
 }
@@ -115,7 +207,8 @@ background-size: 100% 100%;
     left: 30%;
     padding: 16px;
     color: white;
-    width: 40%;
+    width: 90%;
+    position: absolute;
     text-align: center;
     background-color: rgb(0,0,0); /*if image does not loads */
     background-color: rgba(0,0,0,0.1);
