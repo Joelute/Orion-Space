@@ -27,7 +27,7 @@
     margin: 0 auto;
     padding: 0 50px;
 }
-
+ 
 #navbar__logo{
     background-color: black;
     background-size: 100%;
@@ -36,7 +36,9 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    font-size: 1rem;
 }
+
 
 
 
@@ -124,6 +126,7 @@
         background-color: rgba(0,0,0,0);
         position: relative;/*originally  set to fixed*/
         z-index: 2;
+        font-family: Montserrat, sans-serif;
      }
 
    

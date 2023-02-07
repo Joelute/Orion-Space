@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: Montserrat, sans-serif;
 }
 
 .navbar {
@@ -140,11 +140,12 @@ background-size: 100% 100%;
    position: absolute;
    text-align: center;
    background-color: rgb(0,0,0); /*if image does not loads */
-   background-color: rgba(0,0,0,0.1);
+   background-color: rgba(0,0,0,0.5);
    position: relative;/*originally  set to fixed*/
    z-index: 2;
    line-height: 1.5;
    font-weight: 500;
+   font-family: Montserrat, sans-serif;
  }
 
 .bg-text {
@@ -330,7 +331,7 @@ body{
         left: 1%;
         width: 100%;
         /* text-align: center; */
-        font-size: small;
+        font-size: .75rem;
    
     /*text-align: center;*/
 }
@@ -345,15 +346,15 @@ body{
 #Mars{
     
     line-height: 1;
-    font-size: small;
-    top: 3%;
+    font-size: .84rem;
+    top: 5%;
 }
 #Mars u{
-    font-size: small;
+    font-size: smaller;
 }
 
     .text h1{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: -13rem;
     }
 
@@ -368,11 +369,11 @@ body{
     .text1 {
 
 
-        top: 4%;
+        top: 3%;
         left: 1%;
         width: 100%;
         /* text-align: center; */
-        font-size: small;
+        font-size: .75rem;
    
     /*text-align: center;*/
 }
@@ -387,15 +388,15 @@ body{
 #Mars{
     
     line-height: 1;
-    font-size: small;
-    top: 3%;
+    font-size: .84rem;
+    top: 5%;
 }
 #Mars u{
     font-size: small;
 }
  
     .text h1{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: -5rem;
     }
 
