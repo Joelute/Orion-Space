@@ -364,9 +364,7 @@ body{
 
 @media screen and (max-width: 474px){
 
-        top: 4%;
-    }
-    
+     
     .text1 {
 
 
@@ -388,9 +386,8 @@ body{
 
 #Mars{
     
-    line-height: 1.4;
-    font-sizesmall;
-l;
+    line-height: 1;
+    font-size: small;
     top: 3%;
 }
 #Mars u{
