@@ -336,6 +336,10 @@ body{
     /*text-align: center;*/
 }
 
+#Her{
+    top: 40%;
+}
+
 #stathTex{
     font-size: 0.69rem;
     top: 4%;
@@ -364,7 +368,29 @@ body{
  }
 
 @media screen and (max-width: 474px){
+    .main1{
+        background-image: url('/pictures/Spacexshipfrontview_revised.png');
+    }
 
+    .main2{
+        background-image: url('/pictures/ISSmobile.jpg');
+    }
+
+    .main3{
+        background-image: url('/pictures/teahub.io-mars-wallpaperMobile.jpg');
+    }
+
+    .main4{
+        background-image: url('/pictures/0001.png');
+    }
+
+    .main5{
+        background-image: url('/pictures/itermancarrier1.png');
+    }
+
+    .main6{
+        background-image: url('/pictures/MarsSettMobile.png');
+    }
      
     .text1 {
 
@@ -385,6 +411,9 @@ body{
         width: 100%;
 }
 
+#Her{
+    top: 40%;
+}
 #Mars{
     
     line-height: 1;
