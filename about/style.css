@@ -95,8 +95,8 @@ background-size: 100% 100%;
     padding: 0%;
  }
  .text {
-    top: 30%;
-    left: 30%;
+    top: 12%;
+    left: 5%;
     padding: 16px;
     color: white;
     width: 40%;
@@ -105,6 +105,11 @@ background-size: 100% 100%;
     background-color: rgba(0,0,0,0.1);
     position: relative;/*originally  set to fixed*/
     z-index: 2;
+    
+ }
+
+ b{
+    font-size: 300%;
  }
 
 .bg-text {
@@ -250,9 +255,10 @@ body{
        }
 
     .text {
-        top: 75%;
-        left: 22%;
-        width: 60%;
+        top: 50%;
+        left: auto;
+        margin: 0 auto;
+         width: 80%;
         /*text-align: center;*/
     }
     .text h1{
@@ -268,9 +274,10 @@ body{
 
 @media screen and (max-width: 474px){
     .text {
-        top: 75%;
-        left: 22%;
-         width: 60%;
+        top: 50%;
+        left: auto;
+        margin: 0 auto;
+         width: 80%;
          /*text-align: center;*/
     }
     .text h1{

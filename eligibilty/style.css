@@ -95,17 +95,25 @@ background-size: 100% 100%;
     padding: 0%;
  }
  .text {
-    top: 30%;
+    top: 10%;
     left: 30%;
     padding: 16px;
     color: white;
     width: 40%;
     text-align: center;
     background-color: rgb(0,0,0); /*if image does not loads */
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0);
     position: relative;/*originally  set to fixed*/
     z-index: 2;
  }
+ u{
+    font-size: 1.5rem;
+}
+
+p{
+    top: 30%;
+    font-size: medium;
+}
 
 .bg-text {
 /*background-color: rgb(0,0,0);*/ /* Fallback color */
@@ -252,10 +260,10 @@ body{
         }
 
     .text {
-        top: 75%;
-        left: 22%;
-        width: 60%;
-        /*text-align: center;*/
+        top: 15%;
+    left: 1%;
+    width: 100%;
+    text-align: center;
     }
     .text h1{
         font-size: 3rem;
@@ -270,10 +278,10 @@ body{
 
 @media screen and (max-width: 474px){
     .text {
-        top: 75%;
-        left: 22%;
-         width: 60%;
-         /*text-align: center;*/
+        top: 15%;
+    left: 1%;
+    width: 100%;
+    text-align: center;
     }
     .text h1{
         font-size: 3rem;

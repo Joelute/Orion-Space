@@ -77,7 +77,7 @@
 }
 
 .main2{
-    background-color: white;
+    background-color: black;
 }
 
 
@@ -96,18 +96,22 @@ background-size: 100% 100%;
     padding: 0%;
  }
  .text {
-    top: 30%;
-    left: 30%;
+    top: 10%;
+    left: 6%;
     padding: 16px;
     color: white;
-    width: 40%;
+    width: 90%;
     text-align: center;
     background-color: rgb(0,0,0); /*if image does not loads */
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0);
     position: relative;/*originally  set to fixed*/
     z-index: 2;
  }
-
+#heading{
+    width: 300%;
+    position: relative;
+    left: -100%;
+}
 .bg-text {
 /*background-color: rgb(0,0,0);*/ /* Fallback color */
 /*background-color: rgba(0,0,0, 0.4);*/ /* Black w/opacity/see-through */
@@ -125,7 +129,7 @@ text-align: center;
 }
 
 .text h1{
-font-size: 4rem;
+font-size: 1rem;
 /*background-color: black;*/
 color: white;
 /* background-size: 100%; */
@@ -247,10 +251,10 @@ body{
    
 
     .text {
-        top: 75%;
-        left: 22%;
-        width: 60%;
-        /*text-align: center;*/
+        top: 15%;
+    left: 1%;
+    width: 90%;
+    font-size: 60%;
     }
     .text h1{
         font-size: 3rem;
@@ -261,14 +265,19 @@ body{
         font-size: 1.5rem;
     }
 
+    #heading{
+        width: 60%;
+
+    }
+
 }
 
 @media screen and (max-width: 474px){
     .text {
-        top: 75%;
-        left: 22%;
-         width: 60%;
-         /*text-align: center;*/
+        top: 15%;
+        left: 1%;
+        width: 90%;
+        font-size: 60%;
     }
     .text h1{
         font-size: 3rem;
