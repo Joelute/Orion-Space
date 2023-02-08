@@ -481,3 +481,9 @@ body{
     }
    
 }
+
+@media screen and (max-width: 415px){
+    .fon{
+        font-size: 2rem;
+    }
+}
