@@ -252,30 +252,34 @@ body{
 
     .text {
         top: 15%;
-    left: 1%;
+    left: 4%;
     width: 90%;
     font-size: 60%;
     }
     .text h1{
-        font-size: 3rem;
-        margin-top: -13rem;
+    font-size: 3rem;
+    margin-top: -5rem;
     }
-
     .text h2{
         font-size: 1.5rem;
     }
 
     #heading{
-        width: 60%;
-
+        width: 100%;
+        left: 2%;
     }
 
+    p{
+        left: 20%;
+    }
+
+    
 }
 
 @media screen and (max-width: 474px){
-    .text {
+    text {
         top: 15%;
-        left: 1%;
+        left: 4%;
         width: 90%;
         font-size: 60%;
     }
@@ -286,5 +290,14 @@ body{
 
     .text h2{
         font-size: 1.3rem;
+    }
+
+    #heading{
+        width: 100%;
+        left: 2%;
+    }
+
+    p{
+        left: 20%;
     }
 }
