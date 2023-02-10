@@ -281,7 +281,7 @@ body{
         top: 15%;
         left: 4%;
         width: 90%;
-        font-size: .2rem;
+        font-size: .1rem;
     }
     .text h1{
         font-size: 3rem;
@@ -308,7 +308,7 @@ body{
 
 @media screen and (max-width: 415px){
     .text{
-    font-size: .2rem;
+    font-size: .1rem;
     }
 
     #goo{
