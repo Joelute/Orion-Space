@@ -284,7 +284,7 @@ body{
         font-size: .1rem;
     }
     .text h1{
-        font-size: 3rem;
+        font-size: 1rem;
         margin-top: -5rem;
     }
 
@@ -311,6 +311,7 @@ body{
     font-size: .1rem;
     }
 
+
     #goo{
         font-size: .4rem;
     }
@@ -318,6 +319,12 @@ body{
     #heading{
         font-size: .9rem;
     }
+
+    .text h1{
+        font-size: 1rem;
+        margin-top: -5rem;
+    }
+
 
 
 }
