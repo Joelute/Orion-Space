@@ -304,10 +304,10 @@ body{
 
 @media screen and (max-width: 415px){
     .text{
-    font-size: .73rem;
+    font-size: .57rem;
     }
 
-    a{
-        font-size: .6rem;
+    #goo{
+        font-size: .4rem;
     }
 }
