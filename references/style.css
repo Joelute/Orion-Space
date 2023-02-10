@@ -301,3 +301,13 @@ body{
         left: 20%;
     }
 }
+
+@media screen and (max-width: 415px){
+    .text{
+    font-size: .73rem;
+    }
+
+    a{
+        font-size: .6rem;
+    }
+}
